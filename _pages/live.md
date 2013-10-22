@@ -6,42 +6,37 @@
 
 
 {% block copy_headline %}
-# Docker hack-day #7 - Oct. 1st - LIVE #
+# Docker Meetup San Mateo @ Edmodo - Oct. 22nd - LIVE #
 {% endblock %}
 
 {% block copy_introduction %}
 
 ## Schedule
 
-* 10am PST: Docker 101 online session 1
-* 5pm PST: Docker 101 online session 2
-* 6pm PST: Lightning talks
+Streaming starts at around 6:15pm PST
 
-## 101 online sessions & lightning talks
+* 6:15pm PST: Docker: What? Why? by <a href="https://twitter.com/nickstinemates">Nick Stinemates</a>
+* 6:30pm PST: How to build a SaaS in 10 minutes by <a href="https://twitter.com/nickstinemates">Nick Stinemates</a>
+* 7:00pm PST: Docker + OpenStack by <a href="https://twitter.com/sam_alba">Sam Alba</a>
+* 7:30pm PST: Q&A
 
-<img src="{% static 'img/live/docker-hackday-7-waiting-pi.jpg' %}" title="LIVE">
-
-During this hack day we are going to have two 101 online sessions **(10am PST and 5pm PST)**. Both of which will be available on this page.
-
-Please <a href="http://www.meetup.com/Docker-meetups/events/142621692/" target="_blank">register here</a> if you want a reminder.
+<img src="{% static 'img/live/docker-meetup-waiting.jpg' %}" title="LIVE">
+<i>Note: There can be up to 1 minute delay with Google Hangout On Air.</i>
 
 ### Backchannel
 
-In addition, we have a special IRC channel: <strong>#docker-hackday</strong>, where you'll be able to ask questions during the 101 sessions.
+In addition, we have a special IRC channel: <strong>#docker-meetup</strong>, where you'll be able to ask questions during the meetup.
+
 {% endblock copy_introduction %}
 
     {# NOTE: Link to online chat here, cannot be in markdown #}
 
 {% block copy_1 %}
 
-We start the lightning talks broadcast at 6pm PST.
-
-## First 101 online session (10am PST)
-
-<iframe width="642" height="400" src="http://www.youtube.com/embed/izaolRP_fFc" frameborder="0" allowfullscreen></iframe>
+We start the Docker Meetup broadcast at around 6:15pm PST.
 
 Back channel: IRC #docker-hackday
 
-Twitter: #dockerhackday
+Twitter: #dockermeetup
 
 {% endblock %}
