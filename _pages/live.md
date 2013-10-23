@@ -20,7 +20,9 @@ Streaming starts at around 6:15pm PST
 * 7:00pm PST: Docker + OpenStack by <a href="https://twitter.com/sam_alba">Sam Alba</a>
 * 7:30pm PST: Q&A
 
-<img src="{% static 'img/live/docker-meetup-waiting.jpg' %}" title="LIVE">
+{#<img src="{% static 'img/live/docker-meetup-waiting.jpg' %}" title="LIVE">#}
+<iframe width="625" height="380" src="http://www.youtube.com/embed/6RzQB0XbTrQ" frameborder="0" allowfullscreen></iframe>
+
 <i>Note: There can be up to 1 minute delay with Google Hangout On Air.</i>
 
 ### Backchannel
