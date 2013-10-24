@@ -66,10 +66,13 @@ def press(request):
     Press page
     """
 
-    press_items = GenericPost.objects.all().order_by('-publication_date')
+    posts = GenericPost.objects.all().order_by('-publication_date')
+    press_items = posts.filter(category__name='press')
+    blog_items = posts.filter(category__name='blog')
 
     return render_to_response("about/press.md", {
         "press_items": press_items,
+        "blog_items": blog_items,
     }, context_instance=RequestContext(request))
 
 

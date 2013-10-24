@@ -9,6 +9,8 @@
 ./manage.py migrate
 
 # Create cache table, If you are moving this to a new production environment, please also run it there!
-./manage.py createcachetable cachetable
+# ./manage.py createcachetable cachetable
+./manage.py createcachetable dbcache1
 
-
+./manage.py loaddata base/fixtures/base_initial.json 
+./manage.py loaddata base/fixtures/TeamMember-update1.json

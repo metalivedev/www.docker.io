@@ -11,15 +11,6 @@ import boto.s3.connection
 from unipath import Path
 PROJECT_ROOT = Path(__file__).ancestor(2)
 
-AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
-AWS_STORAGE_BUCKET_NAME = 'www.docker.io-media'
-
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
-
-STATIC_URL = 'http://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/'
-ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
-AWS_S3_CALLING_FORMAT = boto.s3.connection.OrdinaryCallingFormat()
 
 ADMINS = (
     ('Thatcher Peskens', 'thatcher+noise@dotcloud.com'),
@@ -73,7 +64,9 @@ MEDIA_ROOT = ''
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
 # Examples: "http://example.com/media/", "http://media.example.com/"
-MEDIA_URL = ''
+
+AWS_STORAGE_BUCKET_NAME = 'www.docker.io-media'
+MEDIA_URL = 'https://s3.amazonaws.com/{}/'.format(AWS_STORAGE_BUCKET_NAME)
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
@@ -123,7 +116,8 @@ TEMPLATE_LOADERS = (
 TEMPLATE_CONTEXT_PROCESSORS = (
     "django.contrib.auth.context_processors.auth",
     "django.core.context_processors.request",
-    "django.core.context_processors.static"
+    "django.core.context_processors.static",
+    "django.core.context_processors.media"
 )
 
 MIDDLEWARE_CLASSES = (
@@ -143,21 +137,22 @@ MIDDLEWARE_CLASSES = (
 # Local memory caching. We only have a couple of non-dynamic pages, but they are
 # being generated dynamically... So, we might as well cache the whole thing in memory.
 CACHES = {
-    'default': {
+    'default': {  # for session data
+        'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
+        'LOCATION': 'cachetable',
+    },
+    'database_cache': {  # for tweets
+        'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
+        'LOCATION': 'dbcache1',
+    },
+    'LocMemCache': {  # not really used
         'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
         'LOCATION': 'unique-snowflake'
     },
-    'disk_cache': {
+    'disk_cache': {  # former tweet cache
         'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
         'LOCATION': PROJECT_ROOT.child('cache'),
-    }
-    # In the progress of setting this up for the tweet-caching (and such)
-    ,
-    'database_cache': {
-        'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
-        'LOCATION': 'cachetable',
-    }
-
+    },
 }
 
 
@@ -266,7 +261,7 @@ GOOGLE_ANALYTICS_SITE_SPEED = True
 # Besides, it would otherwise need to be set to .docker.io and *.amazonaws.com which would basically mean anyone
 # can set up a copy of this site anyways without making any changes.
 # ALLOWED_HOSTS = ['*']
-ALLOWED_HOSTS = ['.docker.io', '.dotcloud.com'] # need to set to real prod value.
+ALLOWED_HOSTS = ['.docker.io', '.dotcloud.com']  # need to set to real prod value.
 
 try:
     MAILCHIMP_API_KEY = os.environ['MAILCHIMP_API_KEY']
@@ -274,3 +269,11 @@ except KeyError:
     # Mailchimp will output a warning that it is not set.
     print "warning: MAILCHIMP API KEY NOT SET IN ENVIRONMENT"
     MAILCHIMP_API_KEY = "dummy-api-key"
+
+
+# For storing files in S3
+AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+AWS_S3_CALLING_FORMAT = boto.s3.connection.OrdinaryCallingFormat()
+

@@ -30,6 +30,9 @@ class Image(models.Model):
     image_caption = models.CharField(max_length=80, blank=True)
     image = models.FileField(upload_to=get_file_path, blank=True, null=True)
 
+    def uri(self):
+        return "https://s3.amazonaws.com/www.docker.io-media/{}".format(str(self.image))
+
     def __unicode__(self):
         return u"{}".format(self.alt)
 
