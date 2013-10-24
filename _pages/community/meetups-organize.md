@@ -42,19 +42,19 @@ Now that you are co-organizer of a Docker Meetup Group, here are a few tips and 
 *	Research what would be the best date(s) to schedule the Meetups based on availabilities with regard to competing events in the area and other calendar imperative
 *	Research what are the topic of interest to your audience prior to set an agenda for the meetup
 *	Pay attention to the Meetup page aesthetics, add logos and pictures, invite members to leave comments and reply to these comments
-*	Promote the event on social medias and make sure that the list of keywords is well define if you have created the Docker Meetup Group on your own
+*	Promote the event on social media and make sure that the list of keywords is well define if you have created the Docker Meetup Group on your own
 
 ## How we can help you
 
 We can support the co-organizers of the Docker Meetup Groups based on their specific needs. For instance, we might / will be able to:
 
-*	Put you in contact with other people interested in being a co-organizer of the same Docker Meetup Group than you and based in the same place
+*	Send you Docker T-shirts and stickers
+*	Put you in contact with other people interested in being a co-organizer of a Docker Meetup group, and which are in the same area
 *	Put you in contact with companies willing to host a Docker Meetup in your area
 *	Introduce you to people willing to give a lightning talk about Docker
-*	Send you Docker tee shirts and stickers
-*	Promote your Docker Group on Docker.io, Docker Weekly and Social Medias.
+*	Promote your Docker Group on Docker.io, Docker Weekly and Social Media
 
-<img src="{% static 'img/community/hackday.jpg' %}">
+<img src="{% static 'img/community/hackday.jpg' %}" alt="Hackday Picture">
 
 ## Host a Docker Meetup
 
