@@ -26,3 +26,23 @@ class EventAdmin(admin.ModelAdmin):
     model = Event
     list_display = ['title', 'location', 'date_and_time']
 admin.site.register(Event, EventAdmin)
+
+class PostAdmin(admin.ModelAdmin):
+    model = GenericPost
+    list_display = ['title', 'category', 'publication_date']
+admin.site.register(GenericPost, PostAdmin)
+
+class CategoryAdmin(admin.ModelAdmin):
+    model = PostCategory
+    list_display = ['name', 'added_date']
+admin.site.register(PostCategory, CategoryAdmin)
+
+class ImageAdmin(admin.ModelAdmin):
+    model = Image
+    list_display = ['image_caption', 'alt', 'image']
+admin.site.register(Image, ImageAdmin)
+
+class TagAdmin(admin.ModelAdmin):
+    model = Tag
+    list_display = ['name', 'added_date']
+admin.site.register(Tag, TagAdmin)

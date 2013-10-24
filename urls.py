@@ -37,7 +37,7 @@ urlpatterns = patterns('',
     url(r'^news/$', 'base.views.news', name="news"),
     url(r'^team/$', 'base.views.team', name="team"),
     url(r'^jobs/$', TemplateView.as_view(template_name='about/jobs.md'), name="jobs"),
-    url(r'^press/$', TemplateView.as_view(template_name='about/press.md'), name="press"),
+    url(r'^press/$', 'base.views.press', name="press"),
 
     # Special purpose pages
     url(r'^news_signup/$', 'base.views.email_thanks', name='email_thanks'),

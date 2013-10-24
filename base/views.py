@@ -12,7 +12,7 @@ from django.http import HttpResponseRedirect
 from utils import TwitterClient, ClientException
 import json
 from django.core.cache import cache
-from base.models import TeamMember, NewsItem, Event
+from base.models import TeamMember, NewsItem, Event, GenericPost
 
 CONSUMER_KEY = 'aEtFq69wvzUAjlzwh9Tw'
 CONSUMER_SECRET = 'o6mcmOLtp35loXfUbRBOVpyfzenFdOSwBV3jd4MMFSM'
@@ -59,6 +59,17 @@ def news(request):
 
     return render_to_response("about/news.md", {
         "news_items": news_items,
+    }, context_instance=RequestContext(request))
+
+def press(request):
+    """
+    Press page
+    """
+
+    press_items = GenericPost.objects.all().order_by('-publication_date')
+
+    return render_to_response("about/press.md", {
+        "press_items": press_items,
     }, context_instance=RequestContext(request))
 
 

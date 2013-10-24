@@ -5,11 +5,21 @@ TEMPLATE_DEBUG = DEBUG
 
 
 import os
+import boto.s3.connection
 #settings_dir = os.path.dirname(__file__)
 #PROJECT_ROOT = os.path.abspath(os.path.dirname(settings_dir))
 from unipath import Path
 PROJECT_ROOT = Path(__file__).ancestor(2)
 
+AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+AWS_STORAGE_BUCKET_NAME = 'www.docker.io-media'
+
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+
+STATIC_URL = 'http://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/'
+ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
+AWS_S3_CALLING_FORMAT = boto.s3.connection.OrdinaryCallingFormat()
 
 ADMINS = (
     ('Thatcher Peskens', 'thatcher+noise@dotcloud.com'),
@@ -185,7 +195,8 @@ PREREQ_APPS = (
     'markdown_deux',
     'south',
     'docker_tutorial',
-    'dockerfile_tutorial'
+    'dockerfile_tutorial',
+    'storages'
 )
 
 PROJECT_APPS = (

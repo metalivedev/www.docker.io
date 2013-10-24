@@ -27,6 +27,45 @@
     <div id="" class="span8 main-copy">
         {% markdown %}{% block copy_introduction %}
         {% endblock %}{% endmarkdown %}
+        <ul>
+        {% for press_item in press_items %}
+            {% if press_item.category|stringformat:"s" == "press" %}
+                <li><h4>{{ press_item.publication_date }} • {{ press_item.title }}</h4>
+                {% if press_item.link %}
+                    {{ press_item.text|add:'<span class="read-more"><a href="'|add:press_item.link|add:'"> Read more -></a></span>'|markdown }}
+                {% else %}
+                    {{ press_item.text|markdown }}
+                {% endif %}
+                {% if press_item.images %}
+                    {% for image in press_item.images.all %}
+                        <a href="{{press_item.link}}" target="_blank">
+                        <img style="margin:15px;" src="https://s3.amazonaws.com/www.docker.io-media/{{image.image}}" alt="{{image.alt}}"></a>
+                    {% endfor %}
+                {% endif %}
+                </li>
+            {% endif %}
+        {% endfor %}
+        </ul>
+
+        <h2>Blogposts on Docker</h2>
+
+        <ul>
+        {% for press_item in press_items %}
+            {% if press_item.category|stringformat:"s" == "blogpost" %}
+
+                {% if press_item.link %}
+                    <li><a href="{{press_item.link}}">{{ press_item.title }} - {{ press_item.publication_date }}</a></li>
+                {% endif %}
+
+            {% endif %}
+        {% endfor %}
+        </ul>
+
+        <h2>Docker on Hacker News</h2>
+
+        <p>Read <a href="https://www.hnsearch.com/search#request/submissions&amp;q=docker&amp;sortby=create_ts+desc&amp;start=0">last Hacker News submissions on Docker</a></p>
+        <hr>
+        <p><strong>If you find an interesting article is missing.. Please make a pull request to <a href="https://github.com/dotcloud/www.docker.io/blob/master/_pages/about/press.md">this page</a></strong></p>
 
     </div>
     </div> <!-- end span12 -->
