@@ -54,7 +54,7 @@ We can support the co-organizers of the Docker Meetup Groups based on their spec
 *	Introduce you to people willing to give a lightning talk about Docker
 *	Promote your Docker Group on Docker.io, Docker Weekly and Social Media
 
-<img src="{% static 'img/community/hackday.jpg' %}" alt="Hackday Picture">
+<img src="{% static 'img/community/hackday-600px.jpg' %}" alt="Hackday Picture">
 
 ## Host a Docker Meetup
 
