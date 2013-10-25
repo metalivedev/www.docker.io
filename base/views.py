@@ -2,6 +2,7 @@
 
 from django.shortcuts import render_to_response
 from django.template import RequestContext
+from django.http import HttpResponse
 from django.http import request
 from mailchimp import utils as mailchimputils
 from mailchimp.chimpy.chimpy import ChimpyException
@@ -12,13 +13,32 @@ from django.http import HttpResponseRedirect
 from utils import TwitterClient, ClientException
 import json
 from django.core.cache import cache
+from django.core import serializers
 from base.models import TeamMember, NewsItem, Event, GenericPost
+from itertools import chain
+from django.forms.models import model_to_dict
+
 
 CONSUMER_KEY = 'aEtFq69wvzUAjlzwh9Tw'
 CONSUMER_SECRET = 'o6mcmOLtp35loXfUbRBOVpyfzenFdOSwBV3jd4MMFSM'
 
 #We are not using the intercom plugin because we use js instead
 #from intercom import Intercom
+
+def json_response(context):
+
+    # lots of caveats, should really go to a better REST framework
+    # e.g. http://django-rest-framework.org/tutorial/1-serialization.html#using-modelserializers
+
+    return_object = {}
+
+    # serialised_context = serializers.serialize('json', context.items()),
+    for key, value in context.items():
+        serialized_query = serializers.serialize('json', value)
+        return_object[key] = json.loads(serialized_query)
+
+    # serialised_context = serializers.serialize('json', combined),
+    return HttpResponse(content=json.dumps(return_object), content_type="application/json")
 
 
 def home(request):
@@ -57,9 +77,14 @@ def news(request):
 
     news_items = NewsItem.objects.all().order_by('-publication_date')
 
-    return render_to_response("about/news.md", {
+    context = {
         "news_items": news_items,
-    }, context_instance=RequestContext(request))
+    }
+
+    if request.GET.get('format', None) == 'json':
+        return json_response(context)
+
+    return render_to_response("about/news.md", context, context_instance=RequestContext(request))
 
 def press(request):
     """
@@ -70,10 +95,16 @@ def press(request):
     press_items = posts.filter(category__name='press')
     blog_items = posts.filter(category__name='blog')
 
-    return render_to_response("about/press.md", {
-        "press_items": press_items,
+
+    context = {
         "blog_items": blog_items,
-    }, context_instance=RequestContext(request))
+        "press_items": blog_items
+    }
+
+    if request.GET.get('format', None) == 'json':
+        return json_response(context)
+
+    return render_to_response("about/press.md", context, context_instance=RequestContext(request))
 
 
 def team(request):
@@ -83,9 +114,14 @@ def team(request):
 
     core_team = TeamMember.objects.all().filter(show_as_team=True).order_by('full_name')
 
-    return render_to_response("about/team.md", {
+    context = {
         "core_team": core_team,
-    }, context_instance=RequestContext(request))
+    }
+
+    if request.GET.get('format', None) == 'json':
+        return json_response(context)
+
+    return render_to_response("about/team.md", context, context_instance=RequestContext(request))
 
 
 def events(request):
@@ -97,11 +133,17 @@ def events(request):
     upcoming_events = events.filter(date_and_time__gt=datetime.today())
     past_events = events.filter(date_and_time__lt=datetime.today())
 
-    return render_to_response("community/events.md", {
+    context = {
         "events": events,
         "upcoming_events": upcoming_events,
         "past_events": past_events
-    }, context_instance=RequestContext(request))
+    }
+
+    if request.GET.get('format', None) == 'json':
+        return json_response(context)
+
+
+    return render_to_response("community/events.md", context, context_instance=RequestContext(request))
 
 
 def email_thanks(request):
