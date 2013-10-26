@@ -54,7 +54,7 @@ class NewsItem(models.Model):
     show = models.BooleanField(default=False)
     author = models.ForeignKey(TeamMember)
     creation_date = models.DateTimeField(default=datetime.now(), editable=False)
-    images = models.ManyToManyField(Image, blank=True)
+    # images = models.ManyToManyField(Image, blank=True)  # Images not included yet
 
     def __unicode__(self):
         return u"{}".format(self.title)
@@ -66,7 +66,7 @@ class Event(models.Model):
     date_and_time = models.DateTimeField(default=datetime.utcnow(), help_text="Time local to the event")
     text = models.TextField(blank=True, help_text="Markdown format accepted")
     link = models.URLField(blank=True)
-    images = models.ManyToManyField(Image, blank=True)
+    # images = models.ManyToManyField(Image, blank=True) ## image not included yet
 
     def __unicode__(self):
         return u"{}".format(self.title)

@@ -51,14 +51,12 @@
         <h2>Blogposts on Docker</h2>
 
         <ul>
-        {% for press_item in press_items %}
-            {% if press_item.category|stringformat:"s" == "blogpost" %}
+        {% for blog_item in blog_items %}
 
-                {% if press_item.link %}
-                    <li><a href="{{press_item.link}}">{{ press_item.title }} - {{ press_item.publication_date }}</a></li>
+                {% if blog_item.link %}
+                    <li><a href="{{blog_item.link}}">{{ blog_item.title }} - {{ blog_item.publication_date }}</a></li>
                 {% endif %}
 
-            {% endif %}
         {% endfor %}
         </ul>
     </div>

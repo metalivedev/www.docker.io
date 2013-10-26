@@ -98,7 +98,7 @@ def press(request):
 
     context = {
         "blog_items": blog_items,
-        "press_items": blog_items
+        "press_items": press_items
     }
 
     if request.GET.get('format', None) == 'json':

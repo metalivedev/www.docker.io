@@ -11,7 +11,7 @@ from base.forms import *
 
 
 def images_thubmnail(self):
-  return '<img style="height: 80px; width: auto;" src="{}" alt="{}" >'.format(self.uri(), self.alt)
+  return '<img style="max-height: 80px; width: auto;" src="{}" alt="{}" >'.format(self.uri(), self.alt)
   # return self.uri()
 
 images_thubmnail.short_description = 'Thumbnail'
