@@ -261,7 +261,7 @@ GOOGLE_ANALYTICS_SITE_SPEED = True
 # Besides, it would otherwise need to be set to .docker.io and *.amazonaws.com which would basically mean anyone
 # can set up a copy of this site anyways without making any changes.
 # ALLOWED_HOSTS = ['*']
-ALLOWED_HOSTS = ['.docker.io', '.dotcloud.com']  # need to set to real prod value.
+ALLOWED_HOSTS = ['.docker.io', '.dotcloud.com', '.docker.com']  # need to set to real prod value.
 
 try:
     MAILCHIMP_API_KEY = os.environ['MAILCHIMP_API_KEY']
