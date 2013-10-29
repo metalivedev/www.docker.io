@@ -145,7 +145,7 @@ CACHES = {
         'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
         'LOCATION': 'dbcache1',
     },
-    'LocMemCache': {  # not really used
+    'LocMemCache': {  # used for storing the mailchimp object
         'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
         'LOCATION': 'unique-snowflake'
     },
@@ -268,7 +268,7 @@ try:
 except KeyError:
     # Mailchimp will output a warning that it is not set.
     print "warning: MAILCHIMP API KEY NOT SET IN ENVIRONMENT"
-    MAILCHIMP_API_KEY = "dummy-api-key"
+    MAILCHIMP_API_KEY = "dummy_api_key"
 
 
 # For storing files in S3

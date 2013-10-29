@@ -2,22 +2,18 @@
 
 from django.shortcuts import render_to_response
 from django.template import RequestContext
-from django.http import HttpResponse
-from django.http import request
+from django.http import HttpResponse, request
 from mailchimp import utils as mailchimputils
 from mailchimp.chimpy.chimpy import ChimpyException
 from datetime import datetime
 from forms import NewsSubscribeForm
 from django.http import HttpResponseRedirect
-# from .utils import get_app_auth_twitter
 from utils import TwitterClient, ClientException
 import json
-from django.core.cache import cache
 from django.core import serializers
 from base.models import TeamMember, NewsItem, Event, GenericPost
-from itertools import chain
-from django.forms.models import model_to_dict
 
+from django.core.cache import get_cache
 
 CONSUMER_KEY = 'aEtFq69wvzUAjlzwh9Tw'
 CONSUMER_SECRET = 'o6mcmOLtp35loXfUbRBOVpyfzenFdOSwBV3jd4MMFSM'
@@ -157,8 +153,11 @@ def email_thanks(request):
             email = form.cleaned_data["email"]
 
             list_id = 'c0995b6e8f'
-            CACHE_TIMEOUT = 3600 * 24 * 3
+            CACHE_TIMEOUT = 3600 * 24 * 3  # 3 days
 
+            # we use local memory cache because the db cache fails to pickle
+            # the mailchimp_list object
+            cache = get_cache('LocMemCache')
             mailchimp_list = cache.get(list_id)
 
             if mailchimp_list:
