@@ -112,7 +112,7 @@
         {% for team_member in core_team %}
 
             <div class="team-member" tabindex="0">
-                <img src="{% gravatar_url team_member.gravatar_email %}" alt="profile picture">
+                <img src="{% gravatar_url team_member.gravatar_email 145 %}" alt="profile picture">
                 <span class="name">{{ team_member.full_name }}</span>
                 <span class="bio" style="display: none">{{ team_member.bio }}</span>
             </div>

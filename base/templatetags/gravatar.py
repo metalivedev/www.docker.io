@@ -1,4 +1,3 @@
-
 ## From the gravatar website
 
 ### gravatar.py ###############
@@ -14,22 +13,26 @@
 
 
 from django import template
-import urllib, hashlib
+import urllib
+import hashlib
 
 register = template.Library()
 
+
 class GravatarUrlNode(template.Node):
-    def __init__(self, email):
+    def __init__(self, email, size):
         self.email = template.Variable(email)
+        self.size = template.Variable(size)
 
     def render(self, context):
         try:
             email = self.email.resolve(context)
+            size = self.size.resolve(context)
         except template.VariableDoesNotExist:
             return ''
 
         default = "//example.com/static/images/defaultavatar.jpg"
-        size = 200
+
         if email:
             gravatar_url = "//www.gravatar.com/avatar/" + hashlib.md5(email.lower()).hexdigest() + "?"
         else:
@@ -38,7 +41,7 @@ class GravatarUrlNode(template.Node):
 
         # removed default until we have an actual default image we can use.
         #gravatar_url += urllib.urlencode({'d':default, 's':str(size)})
-        gravatar_url += urllib.urlencode({'s':str(size)})
+        gravatar_url += urllib.urlencode({'s': str(size)})
 
         return gravatar_url
 
@@ -46,9 +49,12 @@ class GravatarUrlNode(template.Node):
 @register.tag
 def gravatar_url(parser, token):
     try:
-        tag_name, email = token.split_contents()
+        tag_name, email, size = token.split_contents()
 
     except ValueError:
         raise template.TemplateSyntaxError, "%r tag requires a single argument" % token.contents.split()[0]
 
-    return GravatarUrlNode(email)
+    gravatar_url = GravatarUrlNode(email, size)
+
+
+    return gravatar_url
