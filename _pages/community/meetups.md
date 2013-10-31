@@ -45,7 +45,7 @@ Do you want to be listed here? Email us at <strong>meetup@docker.io</strong> or 
 
 #### Europe
 * <a href="http://www.meetup.com/Docker-London/">London, UK</a>
-* <a href="http://www.meetup.com/Docker-Milan/">Milan, Italy</a>
+* <a href="http://www.meetup.com/Docker-Milano/">Milan, Italy</a>
 * <a href="http://www.meetup.com/Docker-Paris">Paris, France</a>
 
 
