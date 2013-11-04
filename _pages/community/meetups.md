@@ -41,6 +41,7 @@ Do you want to be listed here? Email us at <strong>meetup@docker.io</strong> or 
 * <a href="http://www.meetup.com/Docker-Toronto/">Toronto, ON</a>
 
 #### South America
+* <a href="http://www.meetup.com/Docker-Rio-de-Janeiro/">Rio de Janeiro, Brazil</a>
 * <a href="http://www.meetup.com/Docker-Sao-Paulo/">S&atilde;o Paulo, Brazil</a>
 
 #### Europe
