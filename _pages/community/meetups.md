@@ -45,13 +45,16 @@ Do you want to be listed here? Email us at <strong>meetup@docker.io</strong> or 
 * <a href="http://www.meetup.com/Docker-Sao-Paulo/">S&atilde;o Paulo, Brazil</a>
 
 #### Europe
+* <a href="http://www.meetup.com/Docker-Barcelona/">Barcelona, Spain</a>
+* <a href="http://www.meetup.com/Docker-Krakow/">Krakow, Poland</a>
 * <a href="http://www.meetup.com/Docker-London/">London, UK</a>
 * <a href="http://www.meetup.com/Docker-Milan/">Milan, Italy</a>
 * <a href="http://www.meetup.com/Docker-Paris">Paris, France</a>
 * <a href="http://www.meetup.com/Docker-Warsaw">Warsaw, Poland</a>
 * <a href="http://www.meetup.com/Docker-Budapest">Budapest, Hungary</a>
+* <a href="http://www.meetup.com/Docker-Poznan">Poznan, Poland</a>
 * <a href="http://www.meetup.com/Docker-Prague">Prague, Czech Republic</a>
-
+* <a href="http://www.meetup.com/Docker-Stockholm">Stockholm, Sweden</a>
 
 {% endblock %}
 
