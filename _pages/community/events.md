@@ -10,7 +10,7 @@
 
 {% block copy_introduction %}
 
-## Events
+# Events
 
 We have a ton of events going on (see below), in many places around the world, in some occasions also via live streaming. Here
     is an overview of the events we know that are going on.
