@@ -75,7 +75,7 @@ Sharing what you have built with Docker is a great way to help people understand
 <a href="{% url 'meetups' %}">Docker meetups</a> are a great way to network, learn, share best practices, and have fun.
 See the full list of Docker meetups and events and how to create yours [here]({% url 'events' %}).
 
-<iframe width="620" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=202534187356482762121.0004e943a350c59ab3ca5&amp;ie=UTF8&amp;t=m&amp;ll=46.073231,-48.515625&amp;spn=94.495552,217.617187&amp;z=2&amp;output=embed"></iframe><br />
+<iframe width="620" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=202534187356482762121.0004e943a350c59ab3ca5&amp;ie=UTF8&amp;t=m&amp;ll=26.74561,-49.570312&amp;spn=108.630481,217.617188&amp;z=2&amp;output=embed"></iframe>
 
 ## Contribute
 
