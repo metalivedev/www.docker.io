@@ -11,7 +11,7 @@ get involved with the Docker community by contributing and sharing
 
 {% block copy_introduction %}
 
-## About the community
+# About the community
 
 Join the thousands of developers who are helping to lead the Docker revolution! Joining our community is a great way to
 interact with other talented developers and devops professionals, increase awareness of the work that you are doing,
