@@ -212,7 +212,7 @@ Docker runs three ways:
 
 A container comprises an application and its dependencies. Containers serve to isolate processes which run in isolation in userspace on the host's operating system.
 
-This differs significantly from traditional VMs. Traditional, hardware virtualization (e.g. VMWare, KVM, Xen, EC2) aims to create an entire virtual machine. Each virtualized application contains not only the application (which may only be 10's of MB) along with the binaries and libraries needed to run that application, and an entire Guest operating System (which may measure in 10s of GB).
+This differs significantly from traditional VMs. Traditional, hardware virtualization (e.g. VMWare, KVM, Xen, EC2) aims to create an entire virtual machine. Each virtualized application contains not only the application (which may only be 10's of MB) along with the binaries and libraries needed to run that application, but also an entire Guest operating System (which may measure in 10s of GB).
 
 The picture below captures the difference
 
@@ -220,7 +220,7 @@ The picture below captures the difference
 
 Figure 9: Containers vs. Traditional VMs
 
-Since all of the containers share the same operating system (and, where appropriate, binaries and libraries), they are significantly smaller than VMs, making it possible to store 100s of VMs on a physical host (versus a strictly limited number of VMs). In addition, since they utilize the host operating system, restarting a VM does not mean restarting or rebooting the operating system. Thus, containers are much more portable and much more efficient for many use cases.
+Since all of the containers share the same operating system (and, where appropriate, binaries and libraries), they are significantly smaller than VMs, making it possible to store 100s of containers on a physical host (versus a strictly limited number of VMs). In addition, since they utilize the host operating system, restarting a container does not mean restarting or rebooting the operating system. Thus, containers are much more portable and much more efficient for many use cases.
 
 With Docker Containers, the efficiencies are even greater. With a traditional VM, each application, each copy of an application, and each slight modification of an application requires creating an entirely new VM.
 
@@ -242,7 +242,7 @@ Figure 11: Modfiying and Updating Containers
 
 ## What is the Relationship between Docker and dotCloud?
 
-Docker is an open-source implementation of the deployment engine which powers dotCloud, a popular Platform-as-a-Service. It benefits directly from the experience accumulated over several years of large-scale operation and support of hundreds of thousands of applications and databases. dotCloud is the chief sponsor of the Docker project, and dotCloud CTO is the original architect and current, overall maintainer. While several dotCloud employees work on Docker full-time, Docker is a true community project, with hundreds of non-Docker contributors and a complete open design philosophy. All pulls, pushes, forks,  bugs, issues, and roadmaps are available for viewing, editing, and commenting on GitHub.
+Docker is an open-source implementation of the deployment engine which powers dotCloud, a popular Platform-as-a-Service. It benefits directly from the experience accumulated over several years of large-scale operation and support of hundreds of thousands of applications and databases. dotCloud is the chief sponsor of the Docker project, and the dotCloud CTO is the original architect and current, overall maintainer. While several dotCloud employees work on Docker full-time, Docker is a true community project, with hundreds of non-Docker contributors and a complete open design philosophy. All pulls, pushes, forks,  bugs, issues, and roadmaps are available for viewing, editing, and commenting on GitHub.
 
 ## What Are Some Cool Use Cases For Docker?
 
