@@ -80,7 +80,7 @@ See the full list of Docker meetups and events and how to create yours [here]({%
 ## Contribute
 
 An Open Source project like Docker couldn’t exist without contributions from the developer community.
-    As of June 30, 2013, there are over 100 contributors and nearly 400 forks on the project.
+    As of November 1st, 2013, there are over 200 contributors ([read more about community stats](http://blog.docker.io/2013/11/docker-project-community-stats)).
 
 * Take a look at our [issues list](https://github.com/dotcloud/docker/issues?state=open) and consider submitting a patch
 * Review our roadmap on [GitHub](https://github.com/dotcloud/docker) and provide feedback
