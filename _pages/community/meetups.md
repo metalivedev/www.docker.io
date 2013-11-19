@@ -37,27 +37,29 @@ Do you want to be listed here? Email us at <strong>meetup@docker.io</strong> or 
 * <a href="http://www.meetup.com/Docker-Palo-Alto/">Palo Alto, CA</a>
 * <a href="http://www.meetup.com/Docker-Portland-OR/">Portland, OR</a>
 * <a href="http://www.meetup.com/Docker-San-Mateo-CA/">San Mateo, CA</a>
+* <a href="http://www.meetup.com/Docker-seattle/">Seattle, WA</a>
 * <a href="http://www.meetup.com/Docker-meetups/">San Francisco, CA</a>
 * <a href="http://www.meetup.com/Docker-Toronto/">Toronto, ON</a>
 
 #### South America
+* <a href="http://www.meetup.com/Docker-Buenos-Aires/">Buenos Aires, Argentina</a>
 * <a href="http://www.meetup.com/Docker-Rio-de-Janeiro/">Rio de Janeiro, Brazil</a>
 * <a href="http://www.meetup.com/Docker-Sao-Paulo/">S&atilde;o Paulo, Brazil</a>
 
 #### Europe
 * <a href="http://www.meetup.com/Docker-Amsterdam">Amsterdam, The Netherlands</a>
-* <a href="http://www.meetup.com/Docker-Barcelona/">Barcelona, Spain</a>
+* <a href="http://www.meetup.com/docker-barcelona-spain/">Barcelona, Spain</a>
 * <a href="http://www.meetup.com/Docker-Berlin">Berlin, Germany</a>
-* <a href="http://www.meetup.com/Docker-Krakow/">Krakow, Poland</a>
+* <a href="http://www.meetup.com/Docker-Budapest-Hungary/">Budapest, Hungary</a>
+* <a href="http://www.meetup.com/docker-krakow-poland">Krakow, Poland</a>
 * <a href="http://www.meetup.com/Docker-London/">London, UK</a>
 * <a href="http://www.meetup.com/Docker-Milano/">Milan, Italy</a>
 * <a href="http://www.meetup.com/Docker-Paris">Paris, France</a>
-* <a href="http://www.meetup.com/Docker-Warsaw">Warsaw, Poland</a>
-* <a href="http://www.meetup.com/Docker-Budapest">Budapest, Hungary</a>
 * <a href="http://www.meetup.com/Docker-Poznan">Poznan, Poland</a>
-* <a href="http://www.meetup.com/Docker-Prague">Prague, Czech Republic</a>
+* <a href="http://www.meetup.com/Docker-Prague-Czech-Republic/">Prague, Czech Republic</a>
 * <a href="http://www.meetup.com/Docker-Stockholm">Stockholm, Sweden</a>
 * <a href="http://www.meetup.com/Docker-Vienna">Vienna, Austria</a>
+* <a href="http://www.meetup.com/Docker-Warsaw-Poland/">Warsaw, Poland</a>
 
 #### Asia
 * <a href="http://www.meetup.com/Docker-Jakarta">Jakarta, Indonesia</a>
