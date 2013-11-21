@@ -43,6 +43,7 @@ Do you want to be listed here? Email us at <strong>meetup@docker.io</strong> or 
 
 #### South America
 * <a href="http://www.meetup.com/Docker-Buenos-Aires/">Buenos Aires, Argentina</a>
+* <a href="http://www.meetup.com/Docker-Porto-Alegre/">Porto Alegre, Brazil</a>
 * <a href="http://www.meetup.com/Docker-Rio-de-Janeiro/">Rio de Janeiro, Brazil</a>
 * <a href="http://www.meetup.com/Docker-Sao-Paulo/">S&atilde;o Paulo, Brazil</a>
 
@@ -62,6 +63,7 @@ Do you want to be listed here? Email us at <strong>meetup@docker.io</strong> or 
 * <a href="http://www.meetup.com/Docker-Warsaw-Poland/">Warsaw, Poland</a>
 
 #### Asia
+* <a href="http://www.meetup.com/Docker-Bangalore">Bangalore, India</a>
 * <a href="http://www.meetup.com/Docker-Jakarta">Jakarta, Indonesia</a>
 
 
