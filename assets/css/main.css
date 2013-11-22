@@ -189,7 +189,8 @@ footer .footer-items-right,
 .social .slideshare,
 .social .linkedin,
 .social .flickr,
-.social .youtube {
+.social .youtube,
+.social .reddit {
   background: url("../img/social/docker_social_logos.png") no-repeat transparent;
   display: inline-block;
   height: 32px;
@@ -198,15 +199,18 @@ footer .footer-items-right,
   width: 32px;
   margin-right: 5px;
 }
-.social .twitter {
-  background-position: -160px 0px;
-}
 .social :hover {
   -webkit-transform: rotate(-10deg);
   -moz-transform: rotate(-10deg);
   -o-transform: rotate(-10deg);
   -ms-transform: rotate(-10deg);
   transform: rotate(-10deg);
+}
+.social .twitter {
+  background-position: -160px 0px;
+}
+.social .reddit {
+  background-position: -256px 0px;
 }
 .social .github {
   background-position: -64px 0px;
