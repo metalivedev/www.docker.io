@@ -1,6 +1,6 @@
 {% extends 'live.html' %}
 {% load static %}
-{% block title %}Docker Hack Day #7 - {% endblock %}
+{% block title %}Docker Global Hack Day - {% endblock %}
 {% block meta-description %}Docker is an open-source project to easily create lightweight, portable, self-sufficient containers from any application. The same container that a developer builds and tests on a laptop can run at scale, in production, on VMs, bare metal, OpenStack clusters, public clouds and more.{% endblock %}
 {% block meta-keywords %}Docker, linux containers, lxc, PaaS, dotCloud, introduction, about, how it works{% endblock %}
 
@@ -13,6 +13,8 @@
 
 ## Schedule
 
+* All day: hack on Docker! Add you project here: <a gref="goo.gl/UDsLzx">goo.gl/UDsLzx</a>
+* 10:30am PST: Docker 101 online session with <a href="https://twitter.com/nickstinemates">Nick Stinemates</a>
 * 10:30am PST: Docker 101 online session with <a href="https://twitter.com/jpetazzo">Jérôme Petazzoni</a>
 * 6:00pm PST: Lightning talks
 
