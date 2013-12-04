@@ -13,12 +13,13 @@
 
 ## Schedule
 
-* 10:30am PST: Docker 101 online session with <a href="https://twitter.com/nickstinemates">Nick Stinemates</a>
+* 10:30am PST: Docker 101 online session with <a href="https://twitter.com/jpetazzo">Jérôme Petazzoni</a>
 * 6:00pm PST: Lightning talks
 
 ## 101 online sessions & lightning talks
 
-<img src="{% static 'img/live/docker-hack-day-8.jpg' %}" title="LIVE">
+<iframe width="640" height="420" src="http://www.youtube.com/embed/2qG2XAfFHG0" frameborder="0" allowfullscreen></iframe>
+{#<img src="{% static 'img/live/docker-hack-day-8.jpg' %}" title="LIVE">#}
 
 <a href="http://blog.docker.io/2013/11/docker-global-hack-day/" target="_blank">More info</a>.
 
