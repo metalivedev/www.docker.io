@@ -36,6 +36,7 @@ Do you want to be listed here? Email us at <strong>meetup@docker.io</strong> or 
 * <a href="http://www.meetup.com/Docker-NewYorkCity/">New York, NY</a>
 * <a href="http://www.meetup.com/Docker-Palo-Alto/">Palo Alto, CA</a>
 * <a href="http://www.meetup.com/Docker-Portland-OR/">Portland, OR</a>
+* <a href="http://www.meetup.com/Docker-St-Louis/">Saint Louis, MO</a>
 * <a href="http://www.meetup.com/Docker-San-Mateo-CA/">San Mateo, CA</a>
 * <a href="http://www.meetup.com/Docker-seattle/">Seattle, WA</a>
 * <a href="http://www.meetup.com/Docker-meetups/">San Francisco, CA</a>
@@ -65,6 +66,7 @@ Do you want to be listed here? Email us at <strong>meetup@docker.io</strong> or 
 #### Asia
 * <a href="http://www.meetup.com/Docker-Bangalore">Bangalore, India</a>
 * <a href="http://www.meetup.com/Docker-Jakarta">Jakarta, Indonesia</a>
+* <a href="http://www.meetup.com/Docker-Tokyo">Tokyo, Japan</a>
 
 
 {% endblock %}
