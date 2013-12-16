@@ -20,9 +20,6 @@
 
 ## 101 online sessions & lightning talks
 
-<iframe width="640" height="420" src="http://www.youtube.com/embed/2qG2XAfFHG0" frameborder="0" allowfullscreen></iframe>
-{#<img src="{% static 'img/live/docker-hack-day-8.jpg' %}" title="LIVE">#}
-
-<a href="http://blog.docker.io/2013/11/docker-global-hack-day/" target="_blank">More info</a>.
+<a href="http://blog.docker.io/2013/12/global-hack-day-demo-videos/" target="_blank">See the results on our blog</a>.
 
 {% endblock %}
