@@ -55,7 +55,7 @@ Dockerfiles provide a simple syntax for building images and they are a great way
 There are several installation options. Our recommended installation path is for **Ubuntu linux**,
     because we develop Docker on Ubuntu and our installation package will do most of the work for you.
 
-Mac, Windows and some Linux distributions cannot natively run Docker at this time so we help you setup a
+Mac, Windows and some Linux distributions cannot natively run Docker at this time so we help you set up a
     Ubuntu virtual machine and run Docker inside of that.
 
 **Platforms:**
