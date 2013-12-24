@@ -21,7 +21,7 @@ urlpatterns = patterns('',
     url(r'^the_whole_story/$', TemplateView.as_view(template_name='the-whole-story.md'), name="the_whole_story"),
     url(r'^the-whole-story/$', RedirectView.as_view(url=reverse_lazy('the_whole_story'))),
 
-    # Det Started
+    # Get Started
     url(r'^gettingstarted/$', TemplateView.as_view(template_name='getting-started.md'), name="getting_started"),
     url(r'^tutorial/', include('docker_tutorial.urls')),
     url(r'^learn/', include('dockerfile_tutorial.urls')),
