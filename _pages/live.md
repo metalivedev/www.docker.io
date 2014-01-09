@@ -13,7 +13,7 @@
 
 ## Schedule
 
-* All day: hack on Docker! Add you project here: <a gref="goo.gl/UDsLzx">goo.gl/UDsLzx</a>
+* All day: hack on Docker! Add you project here: <a href="https://goo.gl/UDsLzx">goo.gl/UDsLzx</a>
 * 10:30am PST: Docker 101 online session with <a href="https://twitter.com/nickstinemates">Nick Stinemates</a>
 * 10:30am PST: Docker 101 online session with <a href="https://twitter.com/jpetazzo">Jérôme Petazzoni</a>
 * 6:00pm PST: Lightning talks
