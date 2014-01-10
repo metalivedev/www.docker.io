@@ -32,7 +32,7 @@ Already over 100 people have contributed to to the project with contributions bi
 
 ## Core team
 
-The core team - employed by dotCloud, the company behind docker. This team not only contributes to the Docker core,
+The core team - employed by Docker, Inc., the company behind Docker. This team not only contributes to the Docker core,
     but also to the tooling around it, website, marketing, support, legal and everything else.
 
 
