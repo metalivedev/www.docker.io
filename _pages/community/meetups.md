@@ -21,7 +21,7 @@ Anyone can join or start a Docker Meetup. Simply click on the closest city to jo
     ops engineers using Docker. If you want to create a new Docker Meetup in your city, we will be happy to help:
     <a href="{% url 'meetups-organize' %}">follow the guide</a>.
 
-<iframe width="620" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=202534187356482762121.0004e943a350c59ab3ca5&amp;ie=UTF8&amp;t=m&amp;ll=26.74561,-49.570312&amp;spn=108.630481,217.617188&amp;z=2&amp;output=embed"></iframe><br /><small>View <a href="https://maps.google.com/maps/ms?msa=0&amp;msid=202534187356482762121.0004e943a350c59ab3ca5&amp;ie=UTF8&amp;t=m&amp;ll=26.74561,-49.570312&amp;spn=108.630481,217.617188&amp;z=2&amp;source=embed" style="color:#0000FF;text-align:left">Docker Meetup Groups</a> in a larger map</small>
+<iframe width="620" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=202534187356482762121.0004e943a350c59ab3ca5&amp;ie=UTF8&amp;t=m&amp;source=embed&amp;ll=25.799891,11.25&amp;spn=158.232108,75.234375&amp;z=1&amp;output=embed"></iframe><br /><small>View <a href="https://maps.google.com/maps/ms?msa=0&amp;msid=202534187356482762121.0004e943a350c59ab3ca5&amp;ie=UTF8&amp;t=m&amp;source=embed&amp;ll=25.799891,11.25&amp;spn=158.232108,75.234375&amp;z=1" style="color:#0000FF;text-align:left">Docker Meetup Groups</a> in a larger map</small>
 
 Do you want to be listed here? Email us at <strong>meetup@docker.io</strong> or ping us on <a href="https://twitter.com/docker/">twitter</a>.
 
@@ -67,6 +67,11 @@ Do you want to be listed here? Email us at <strong>meetup@docker.io</strong> or 
 * <a href="http://www.meetup.com/Docker-Bangalore">Bangalore, India</a>
 * <a href="http://www.meetup.com/Docker-Jakarta">Jakarta, Indonesia</a>
 * <a href="http://www.meetup.com/Docker-Tokyo">Tokyo, Japan</a>
+
+#### Oceania
+* <a href="http://www.meetup.com/Docker-Brisbane-Australia">Brisbane, Australia</a>
+* <a href="http://www.meetup.com/Docker-Melbourne-Australia">Melbourne, Australia</a>
+
 
 
 {% endblock %}
