@@ -55,6 +55,7 @@ Do you want to be listed here? Email us at <strong>meetup@docker.io</strong> or 
 * <a href="http://www.meetup.com/Docker-Budapest-Hungary/">Budapest, Hungary</a>
 * <a href="http://www.meetup.com/docker-krakow-poland">Krakow, Poland</a>
 * <a href="http://www.meetup.com/Docker-London/">London, UK</a>
+* <a href="http://www.meetup.com/Docker-Lisbon">Lisbon, Portugal</a>
 * <a href="http://www.meetup.com/Docker-Milano/">Milan, Italy</a>
 * <a href="http://www.meetup.com/Docker-Paris">Paris, France</a>
 * <a href="http://www.meetup.com/Docker-Poznan">Poznan, Poland</a>
@@ -66,11 +67,13 @@ Do you want to be listed here? Email us at <strong>meetup@docker.io</strong> or 
 #### Asia
 * <a href="http://www.meetup.com/Docker-Bangalore">Bangalore, India</a>
 * <a href="http://www.meetup.com/Docker-Jakarta">Jakarta, Indonesia</a>
+* <a href="http://www.meetup.com/Docker-taipei">Taipei, Taiwan</a>
 * <a href="http://www.meetup.com/Docker-Tokyo">Tokyo, Japan</a>
 
 #### Oceania
 * <a href="http://www.meetup.com/Docker-Brisbane-Australia">Brisbane, Australia</a>
 * <a href="http://www.meetup.com/Docker-Melbourne-Australia">Melbourne, Australia</a>
+* <a href="http://www.meetup.com/Docker-wellington">Wellington, New Zealand</a>
 
 
 
