@@ -41,6 +41,7 @@ Do you want to be listed here? Email us at <strong>meetup@docker.io</strong> or 
 * <a href="http://www.meetup.com/Docker-seattle/">Seattle, WA</a>
 * <a href="http://www.meetup.com/Docker-meetups/">San Francisco, CA</a>
 * <a href="http://www.meetup.com/Docker-Toronto/">Toronto, ON</a>
+* <a href="http://www.meetup.com/Docker-DC/">Washington, DC</a>
 
 #### South America
 * <a href="http://www.meetup.com/Docker-Buenos-Aires/">Buenos Aires, Argentina</a>
