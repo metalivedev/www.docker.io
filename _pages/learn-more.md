@@ -32,7 +32,7 @@ Common use cases for Docker include:
 The following presentation explains what Docker is in laymen terms and then goes into more detail what makes Docker
     special and different from virtual machines.
 
-<iframe class="slideshare-presentation" src="https://www.slideshare.net/slideshow/embed_code/24441742" width="630" height="393" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+<iframe class="slideshare-presentation" src="http://www.slideshare.net/slideshow/embed_code/28618034" width="630" height="393" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
 
 <a href="{% url 'the_whole_story' %}" title="Read the whole story in html format">Read the full story</a>
 
