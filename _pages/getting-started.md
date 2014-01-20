@@ -16,7 +16,7 @@
 We try to make using Docker easy.
 
 * **Never tried Docker before?** <a href="#h_tutorial">start with the interactive tutorial.</a>
-* **Want to know more about Dockerfiles?** <a href="#h_tutorial">We have a tutorial for that!.</a>
+* **Want to know more about Dockerfiles?** <a href="/learn/dockerfile/">We have a tutorial for that!.</a>
 * **Looking to install?** <a href="#h_installation">jump to installation</a>
 
 {% endblock %}
@@ -126,7 +126,7 @@ Here are just two examples of some cool stuff people have already built with Doc
     John Costa explains how to use Docker to package Redis, an open source database.
 
 * #### [Memcached as a service, using Docker](http://www.slideshare.net/julienbarbier42/building-a-saas-using-docker)
-    Julien Barbier writes about how to build your own SaaS, with memcached a a proof-of-concept example.
+    Julien Barbier writes about how to build your own SaaS, with memcached as a proof-of-concept example.
 
 
 {% endblock %}
