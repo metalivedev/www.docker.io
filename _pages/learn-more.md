@@ -25,7 +25,7 @@ Common use cases for Docker include:
 *   Automated testing and continuous integration/deployment
 *   Deploying and scaling web apps, databases and backend services
 
-\* Please note Docker is currently under heavy developement. It should not be used in production (yet).
+\* Please note Docker is currently under heavy development. It should not be used in production (yet).
 
 ## Learn what Docker is all about
 
