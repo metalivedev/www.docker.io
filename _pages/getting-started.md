@@ -64,6 +64,7 @@ Mac, Windows and some Linux distributions cannot natively run Docker at this tim
     <a href="http://docs.docker.io/en/latest/installation/archlinux/" target="_blank"><li>Arch Linux <img src="{% static 'img/platform-logos/archlinux.png' %}"> </li></a>
     <a href="http://docs.docker.io/en/latest/installation/gentoolinux/" target="_blank"><li>Gentoo <img src="{% static 'img/platform-logos/gentoolinux.png' %}"> </li></a>
     <a href="http://docs.docker.io/en/latest/installation/fedora/" target="_blank"><li>Fedora <img src="{% static 'img/platform-logos/fedora.png' %}"> </li></a>
+    <a href="http://docs.docker.io/en/latest/installation/openSUSE/" target="_blank"><li>openSUSE <img src="{% static 'img/platform-logos/openSUSE.png' %}"> </li></a>
     <a href="http://docs.docker.io/en/latest/installation/frugalware/" target="_blank"><li>FrugalWare <img src="{% static 'img/platform-logos/frugalware.png' %}"> </li></a>
     <a href="http://docs.docker.io/en/latest/installation/binaries/" target="_blank"><li>From Binaries <img src="{% static 'img/platform-logos/binaries.png' %}"> </li></a>
     <br style="clear: both">
